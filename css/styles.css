@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--white: #F6F6F6;
+	--black: #010101;
+	--light-blue: #22D4FD;
+	--font-montserrat: "Montserrat", sans-serif;
+	--font-krona: "Krona One", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--black);
+	color: var(--white);
+	box-sizing: border-box;
+}
+
+.header {
+	padding: 2% 0 0 15%;
+}
+
+.header__menu {
+	display: flex;
+	gap: 80px;
+}
+
+.header__menu__link {
+	color: var(--light-blue);
+	font-family: var(--font-montserrat);
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.presentation {
+	display: flex;
+	align-items: center;
+	gap: 82px;
+	margin: 7% 15%;
+	justify-content: space-between;
+}
+
+.presentation__content {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	width: 50%;
+}
+
+.presentation__title {
+	font-family: var(--font-krona);
+	font-size: 2.25rem;
+}
+
+.highlighted {
+	color: var(--light-blue);
+}
+
+.presentation__text {
+	font-family: var(--font-montserrat);
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+.presentation__subtitle {
+	font-family: var(--font-krona);
+	font-size: 1.5rem;
+}
+
+.presentation__buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+.presentation__button {
+	color: var(--white);
+	width: 50%;
+	padding: 21.5px 0;
+	font-family: var(--font-montserrat);
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 8px;
+	border: 2px solid var(--light-blue);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.presentation__button:hover {
+	background-color: #272727;
+	color: var(--white);
+}
+
+.presentation__image {
+	width: 50%;
+}
+
+.footer {
+	background-color: var(--light-blue);
+	padding: 24px;
+}
+
+.footer__text {
+	color: var(--black);
+	font-family: var(--font-montserrat)f;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	.header {
+		padding: 10%;
+	}
+
+	.header__menu {
+		justify-content: center;
+	}
+
+	.presentation {
+		flex-direction: column-reverse;
+		padding: 5%;
+	}
+
+	.presentation__content {
+		width: auto;
+	}
+}
